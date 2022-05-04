@@ -16,15 +16,11 @@
         for ($i = 0; $i < $size; $i++) {
             echo "<tr>";
 
-            for ($j = 0; $j < $size; $j++) {
-                if ($i % 2 === $j % 2) {
-                    echo "<td>+</td>";
-                } else {
-                    echo "<td>-</td>";
-                }
-            }
-
-            echo "</tr>";
+    for ($j = 0; $j < $size; $j++) {
+        if ($i % 2 === $j % 2) {
+            echo "<td><img href='../assets/blanco.png'></td>";
+        } else {
+            echo "<td><img src='../assets/negro.png'></td>";
         }
 
         echo "</table>";
